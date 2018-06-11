@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Laravel 5.6 CRUD Tutorial With Example  </title>
+    <title>Tests  </title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">  
@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Passport Appointment System</h2><br/>
+      <h2>Hotel</h2><br/>
       <form method="post" action="{{url('hotels')}}" enctype="multipart/form-data">
         @csrf
         <div class="row">
