@@ -84,18 +84,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Filtros</h5>
-                  <p class="card-text">Selecciona los filtros que desees</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-            </div>
+               
+                  <h5>Filtros</h5>
+                  <p>Selecciona los filtros que desees</p>
+                 
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">Cantidad de Personas +</li>
+                    <li class="list-group-item list-group-item-info">Precio +</li>
+                    <li class="list-group-item list-group-item-warning">Categoria del Hotel +</li>
+                    <li class="list-group-item list-group-item-danger">Equipamiento de la Habitacion +</li>
+                  </ul>
+       
           </div>
           <div class="col-lg-8">
             <div class="media">
@@ -198,16 +198,9 @@
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Contact</a>
+                <a href="#">Contacto</a>
               </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-              <li class="list-inline-item">&sdot;</li>
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
+              
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
           </div>

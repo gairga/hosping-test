@@ -24,25 +24,24 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="descripcion">Descripcion</label>
-              <input type="text" class="form-control" name="email" value="{{$hotel->descripcion}}">
+              <input type="text" class="form-control" name="descripcion" value="{{$hotel->descripcion}}">
             </div>
           </div>
         <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="direccion">Direccion:</label>
-              <input type="text" class="form-control" name="number" value="{{$hotel->direccion}}">
+              <input type="text" class="form-control" name="direccion" value="{{$hotel->direccion}}">
             </div>
           </div>
         <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4" style="margin-left:38px">
                 <lable>Status</lable>
-                <select name="Status">
+                <select name="status">
                   <option value="1"  @if($hotel->status=="Activa") selected @endif>Activa</option>
                   <option value="2"  @if($hotel->status=="Inactiva") selected @endif>Inactiva</option>
-                  <option value="3" @if($hotel->status=="Suspendido") selected @endif>Suspendido</option>  
-                  <option value="4" @if($hotel->status=="No Aplica") selected @endif>Bangalore</option>
+                  
                 </select>
             </div>
         </div>

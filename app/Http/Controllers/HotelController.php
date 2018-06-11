@@ -56,7 +56,7 @@ class HotelController extends Controller
      */
     public function show(Hotel $hotel)
     {
-           return view('hotel.detalle');
+        return view('hotel.show',compact('hotel'));
     }
 
     /**
@@ -65,12 +65,10 @@ class HotelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Hotel $id)
+    public function edit($id)
     {
-        $id=1;
         $hotel = \App\Hotel::find($id);
-      /*  dump($hotel);
-        die;*/
+        
         return view('hotel.edit',compact('hotel','id'));
     }
 
@@ -81,14 +79,16 @@ class HotelController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Hotel $id)
+    public function update(Request $request, $id)
     {
+
         $hotel= \App\Hotel::find($id);
         $hotel->name=$request->get('name');
         $hotel->direccion=$request->get('direccion');
         $hotel->descripcion=$request->get('descripcion');
-        //$hotel->status=$request->get('status');
+        $hotel->status=$request->get('status');
         $hotel->save();
+    
         return redirect('hotels');
     }
 
